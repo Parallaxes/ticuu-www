@@ -9,4 +9,6 @@ excerpt: "This is a short description of the blog post"
 
 This is content of the blog post.
 
-Testing latex $x$.
+Testing latex \\(test\\).
+
+$$X$$
