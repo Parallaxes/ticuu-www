@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
-    {% raw %}{% if jekyll.environment == 'production' and site.google_analytics %}
+    {% if site.google_analytics %}
     {% include analytics.html %}
     {% endif %}{% endraw %}
     <meta charset='utf-8'>
