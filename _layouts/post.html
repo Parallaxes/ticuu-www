@@ -18,12 +18,49 @@
         <li><a href="{{ site.baseurl }}/contact/">Contact</a></li>
       </ul>
     </nav>
-    <article>
-      <h1>{{ page.title }}</h1>
-      <p><small>Published on {{ page.date | date: "%B %d, %Y" }}</small></p>
-      <div>
-        {{ content }}
-      </div>
+    <article class="container">
+        <h1>{{ page.title }}</h1>
+        <p><small>Published on {{ page.date | date: "%B %d, %Y" }}</small></p>
+        <div>
+          {{ content }}
+        </div>
     </article>
+    
+    <style>
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto; /* Centers the content */
+        }
+    
+        article h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        nav {
+          background-color: #151515;
+          padding: 10px;
+          border-bottom: 1px solid #b5e853;
+        }
+        nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+        }
+        nav ul li {
+          margin-right: 50px;
+          list-style: none;
+        }
+        nav ul li a {
+          color: #b5e853;
+          text-decoration: none;
+          font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+        }
+        nav ul li a:hover {
+          text-decoration: underline;
+        }
+    </style>
   </body>
 </html>
