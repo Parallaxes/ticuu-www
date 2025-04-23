@@ -55,3 +55,5 @@ plugins:
 markdown: kramdown
 kramdown:
   math_engine: katex
+
+google_analytics: "G-MGB0RJ9S0D"
